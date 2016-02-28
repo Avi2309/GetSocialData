@@ -27,11 +27,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.07765452">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.59270996">
+              <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1456690622494" expanded="true" signature="2321:2335" placeholder="..." />
+                <marker date="1456695033497" expanded="true" signature="2321:2335" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="social_graph.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/social_graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.931034">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            <state vertical-scroll-proportion="-17.551723">
+              <caret line="94" column="70" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
               </folding>
@@ -53,11 +53,9 @@
         <entry file="file://$PROJECT_DIR$/js/provider_impl/facebook.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#0#40#0" expanded="false" />
-                <marker date="1456649383000" expanded="true" signature="155:253" placeholder="{...}" />
-                <marker date="1456649383000" expanded="true" signature="209:253" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,11 +115,11 @@
         <option value="$PROJECT_DIR$/js/provider_manager/manager.js" />
         <option value="$PROJECT_DIR$/js/xhr.js" />
         <option value="$PROJECT_DIR$/js/provider_impl/twitter.js" />
-        <option value="$PROJECT_DIR$/js/provider_impl/facebook.js" />
         <option value="$PROJECT_DIR$/js/provider_impl/linkedin.js" />
         <option value="$PROJECT_DIR$/js/provider_impl/pinterest.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/social_graph.js" />
+        <option value="$PROJECT_DIR$/js/provider_impl/facebook.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -349,7 +347,7 @@
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456690622494" expanded="true" signature="2321:2335" placeholder="..." />
+            <marker date="1456695033497" expanded="true" signature="2321:2335" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -382,18 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/provider_impl/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-            <marker date="1456649383000" expanded="true" signature="155:253" placeholder="{...}" />
-            <marker date="1456649383000" expanded="true" signature="209:253" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/provider_impl/pinterest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -406,8 +392,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/social_graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.931034">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state vertical-scroll-proportion="-17.551723">
+          <caret line="94" column="70" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/provider_impl/facebook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
@@ -416,11 +412,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.07765452">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.59270996">
+          <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
           <folding>
             <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1456690622494" expanded="true" signature="2321:2335" placeholder="..." />
+            <marker date="1456695033497" expanded="true" signature="2321:2335" placeholder="..." />
           </folding>
         </state>
       </provider>

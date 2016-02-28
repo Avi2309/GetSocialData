@@ -22,7 +22,7 @@
 <script>
 
     var pageUrlList = ["http://google.com", "http://walla.co.il" , "http://geektime.co.il"];
-    var providersList = ["facebook", "linkedin", "pinterest"];
+    var providersList = ["linkedin", "facebook", "pinterest"];
 
 
     window.onload = function(){
@@ -39,9 +39,9 @@
         });
 
         //execute the test for those 3 options as written in the doc when page loaded
-        //window.socialGraph.manageSocialData("linkedin", "http://google.com", function(resObj){console.log(resObj)});
-        window.socialGraph.manageSocialData("facebook", pageUrlList, function(resObj){console.log(resObj)});
-        //window.socialGraph.manageSocialData(providersList, pageUrlList, function(resObj){console.log(resObj)});
+        //window.socialGraph.manageSocialData("facebook", "http://google.com", function(resObj){console.log(resObj)});
+        //window.socialGraph.manageSocialData("facebook", pageUrlList, function(resObj){console.log(resObj)});
+        window.socialGraph.manageSocialData(providersList, pageUrlList, function(resObj){console.log(resObj)});
     };
 
 

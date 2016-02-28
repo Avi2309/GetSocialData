@@ -92,7 +92,7 @@ window.socialGraph.impl = {};
 
             //for each of the ajax resp call the provider specific exctraction method and push it into a list
             $(arguments).each(function(index,rsp){
-                extractedObj = extractDataFromAjaxRes(provider, rsp[0][0]);
+                extractedObj = extractDataFromAjaxRes(provider, rsp[0]);
                 resValueList.push(extractedObj);
             });
             //we have one provider so set the objects list into one key provider.
@@ -123,10 +123,10 @@ window.socialGraph.impl = {};
         });
 
         $.when.apply(null, ajaxCallsList)
-        .done(function() {
+        .done(function(response1,response2,response3) {
             $(arguments).each(function(index,rsp){
-                extractedObj = extractDataFromAjaxRes(provider[index], rsp[0][0]);
-                resultObj[provider] = extractedObj;
+                extractedObj = extractDataFromAjaxRes(provider[index], rsp[0]);
+                resultObj[provider[index]] = extractedObj;
             });
             
         }).fail(function(){ 

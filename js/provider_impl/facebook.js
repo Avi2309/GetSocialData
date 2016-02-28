@@ -10,9 +10,10 @@ window.socialGraph.impl.facebook =
         success : function(rsp){
             var socialReadyObj = {};
             try{
-                socialReadyObj.likes = rsp.like_count;
-                socialReadyObj.shares = rsp.share_count;
-                socialReadyObj.comments = rsp.comment_count;
+                var dataObj = rsp[0];
+                socialReadyObj.likes = dataObj.like_count;
+                socialReadyObj.shares = dataObj.share_count;
+                socialReadyObj.comments = dataObj.comment_count;
             }
             catch(err){
                 return ({ERROR : "There was an error trying to extracting social data for facebook"});
