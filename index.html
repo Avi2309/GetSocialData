@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get social data</title>
+    <link href="css/unified.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!--bonus related-->
+    <div class="socialContainer">
+        <h1>Get social data</h1>
+        <div id="providersRadio"></div>
+        <div>
+            <input name="urlInput" type="text" placeholder="Enter Url ..." />
+            <input name="getDataButton" type="button" value="Send" onclick="javascript: getDataClick();" style="width: 60px;height: 40px;" />
+        </div>
+        <div id="resBox">
+        </div>
+    </div>
+
+<script>
+
+    var pageUrlList = ["http://google.com", "http://walla.co.il" , "http://geektime.co.il"];
+    var providersList = ["facebook", "linkedin", "pinterest"];
+
+
+    window.onload = function(){
+        <!--bonus related-->
+        $(providersList).each(function (index, elm) {
+
+            var providersRadio = $('#providersRadio');
+            providersRadio.html('');
+
+            for (var i = 0; i < providersList.length; i++) {
+                providersRadio.append('<label class="providerContainer"><input type="radio" name="provider" value="' + providersList[i] + '" /> ' + providersList[i] + '</label>');
+            }
+
+        });
+
+        //execute the test for those 3 options as written in the doc when page loaded
+        //window.socialGraph.manageSocialData("linkedin", "http://google.com", function(resObj){console.log(resObj)});
+        window.socialGraph.manageSocialData("facebook", pageUrlList, function(resObj){console.log(resObj)});
+        //window.socialGraph.manageSocialData(providersList, pageUrlList, function(resObj){console.log(resObj)});
+    };
+
+
+    var getDataClick = function () {
+        var choosenProvider = $('#providersRadio input[name=provider]:checked').val();
+        var pageurl = $('input[name=urlInput]').val();
+        window.socialGraph.manageSocialData(choosenProvider, pageurl, socialDataCallBack);
+    };
+
+    var socialDataCallBack = function(res) {
+        var resKeys = Object.keys(res);
+        var socialDataValObj = res[resKeys[0]];
+        var resBox = $('#resBox');
+        
+        resBox.html('');
+
+        for (prop in socialDataValObj) {
+            if(socialDataValObj.hasOwnProperty(prop))
+                resBox.append('<label style="display:block;">' + prop + ' : ' + socialDataValObj[prop] + '</label>');
+        }
+        $('#resBox').css("display", "block");
+    };
+    
+</script>
+
+<script src="js/libraries/jquery-1.12.1.min.js"></script>
+<script src="js/social_graph.js"></script>
+<script src="js/provider_impl/facebook.js"></script>
+<script src="js/provider_impl/linkedin.js"></script>
+<script src="js/provider_impl/pinterest.js"></script>
+
+</body>
+</html>
